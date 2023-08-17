@@ -1,4 +1,6 @@
 
+#include "main.h"
+
 #include <inttypes.h>
 #include <stdbool.h>
 ///////////////////////////// GPIO /////////////////////////////
@@ -64,6 +66,9 @@ int main()
     gpio_set_mode(orangeLed, GPIO_MODE_OUTPUT); // Set LED to output mode
     gpio_set_mode(redLed, GPIO_MODE_OUTPUT);    // Set LED to output mode
     gpio_set_mode(blueLed, GPIO_MODE_OUTPUT);   // Set LED to output mode
+    if (TEST_MAKE_3 == 5)
+    {
+    }
     for (;;)
     {
         gpio_write(greenLed, true); // open green led
